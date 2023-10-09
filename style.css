@@ -172,3 +172,45 @@ footer .footer-rights{
     color: grey;
     padding: 12px 0;
 }
+
+@media screen and (max-width: 300px) {
+    body{
+        background-color: red;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .box{
+        flex-direction: column;
+    }
+
+    .vertical-title, .vertical-desc{
+        left: 45px;
+    }
+
+    .secondSection .box{
+        width: 50vw;
+    }
+
+    .secondSection .vertical{
+        height: unset;
+    }
+
+    .firstSection{
+        flex-direction: column-reverse;
+    }
+
+    .leftSection{
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rightSection{
+        width: 720px !important;
+    }
+}
